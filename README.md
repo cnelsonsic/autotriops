@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cnelsonsic/autotriops.png?branch=master)](https://travis-ci.org/cnelsonsic/optar)
+
 # Semantics
 
 Many triops are called "triops".
