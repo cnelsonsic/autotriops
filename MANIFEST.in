@@ -1,2 +1,2 @@
-recursive-include autotriop/static *
-recursive-include autotriop/templates *
+recursive-include autotriops/static *
+recursive-include autotriops/templates *
