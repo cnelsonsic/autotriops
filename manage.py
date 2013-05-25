@@ -19,8 +19,8 @@
 
 from flask.ext.script import Manager
 
-from main import create_app
-from controllers import TankController, ParameterController
+from autotriops.main import create_app
+from autotriops.controllers import TankController, ParameterController
 
 manager = Manager(create_app())
 

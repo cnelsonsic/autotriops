@@ -33,6 +33,9 @@ def create_app(config_filename=None):
 
     return app
 
-if __name__ == '__main__':
+def main():
     app = create_app()
     app.run()
+
+if __name__ == '__main__':
+    main()
