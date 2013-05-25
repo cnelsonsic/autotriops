@@ -14,6 +14,6 @@ Calling a single specimen a "triop" is like saying "three-eye", which sounds dum
 $ virtualenv .env
 $ source .env/bin/activate
 (.env)$ ./setup.py develop
-(.env)$ autotriops-server&
+(.env)$ autotriops-server &
 (.env)$ open http://127.0.0.1:5000
 ``
