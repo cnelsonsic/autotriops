@@ -48,8 +48,8 @@ class TankController(object):
                                         .order_by(TankParameter.timestamp)\
                                         .all()
 
-            # TODO: Emulate GROUP BY in python here, by param
-            return params
+            # GROUP BY param.param
+            return {param.param:param for param in params}.values()
 
 class ParameterController(object):
     def add_param(self, name, upper, lower, tolerance):
