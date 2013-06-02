@@ -12,7 +12,7 @@ setup(
         'nose>=1.0'
         ],
     tests_require=[
-        'nose==1.3.0',
+        'nose>=1.2.1',
         'coverage==3.6',
         'Flask-Testing==0.4',
         ],
