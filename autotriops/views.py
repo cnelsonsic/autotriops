@@ -15,7 +15,7 @@
 #    You should have received a copy of the GNU Affero General Public License
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, render_template
 
 from controllers import TankController, ParameterController
 
@@ -49,7 +49,7 @@ def do_dashboard():
             for param, warning in warnings.iteritems():
                 alerts[tank.name][level][param.param.name] = warning
 
-    return jsonify(params=out_params, alerts=alerts)
+    return render_template('dashboard.html', params=out_params, alerts=alerts)
 
 @dashboard.route('/update/<int:tank_id>', methods=['POST'])
 def do_update():

@@ -1,0 +1,17 @@
+{% for tank, tank_alerts in alerts.iteritems() %}
+    {% for alert_type, tank_alert_msgs in tank_alerts.iteritems() %}
+        {% for alert, message in tank_alert_msgs.iteritems() %}
+            <h2> {{ tank|title }}: {{ alert_type|upper }}: {{ message }}</h2>
+        {% endfor %}
+    {% endfor %}
+{% endfor %}
+
+{% for tank, tank_params in params.iteritems() %}
+    <h2> {{ tank|title }} </h2>
+
+    <ul>
+        {% for name, value in tank_params.iteritems() %}
+        <li> {{ name }}: {{ value }} </li>
+        {% endfor %}
+    </ul>
+{% endfor %}
