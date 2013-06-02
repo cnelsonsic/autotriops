@@ -21,4 +21,6 @@ $ source .env/bin/activate
 ```
 
 # Testing
+```bash
 (.env) $ ./setup.py nosetests
+```
