@@ -8,15 +8,21 @@ setup(
     packages=['autotriops'],
     include_package_data=True,
     zip_safe=False,
+    setup_requires=[
+        'nose==1.3.0'
+        ],
+    tests_require=[
+        'nose==1.3.0',
+        'coverage==3.6',
+        'Flask-Testing==0.4',
+        ],
     install_requires=[
         'Flask==0.9',
         'Flask-SQLAlchemy==0.16',
         'Flask-Script==0.5.3',
-        'Flask-Testing==0.4',
         'Jinja2==2.6',
         'SQLAlchemy==0.8.1',
         'Werkzeug==0.8.3',
-        'nose==1.3.0',
         'twill==0.9',
         'wsgiref==0.1.2',
         ],
